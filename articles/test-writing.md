@@ -12,4 +12,25 @@ published: false
 
 ## 環境
 
--
+### ローカル
+
+- VSCode
+
+- nodenv
+  ``` bash
+  ~/gitrepos/zenn-document develop*
+  ❯ anyenv --version
+  anyenv 1.1.2
+  ~/gitrepos/zenn-document develop*
+  ❯ nodenv --version
+  nodenv 1.4.0+3.631d0b6
+  ~/gitrepos/zenn-document develop*
+  ❯ node --version 
+  v14.10.1
+  ```
+
+
+
+## Typoraでの編集
+
+![image-20201211151601720](test-writing.assets/image-20201211151601720.png)
