@@ -3,7 +3,7 @@ title: "DifyをAzureですこしセキュアに利用する"
 emoji: "🐈"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["dify", "azure", "kubernetes"]
-published: false
+published: true
 ---
 
 # この記事は
@@ -46,7 +46,7 @@ Difyは結構たくさんのDocker Containerが[動作](https://github.com/langg
 - env周りはConfigMapに
 - シークレットはAzure KeyVaultから取得する
 
-また、FireCrawlやLangFuseなど他の外部サービスを気軽に追加できます。カスタムツールもすぐに追加可能なので、社内情報にアクセスするツールの追加がはかどります
+Kubernetesを利用することで、FireCrawlやLangFuseなど他の外部サービスや、自作のカスタムツールも同じ環境に手軽に追加出来るのは利点だと思います。社内情報にアクセスするツールの開発がはかどります
 
 ## データベース
 
