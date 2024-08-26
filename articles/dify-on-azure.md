@@ -109,11 +109,16 @@ Azureなので、普通にBlob Storageです。
 rediss://:<ポータルから取得したトークン：Base64です>@＜デプロイしたホスト名＞.redis.cache.windows.net:6380/1
 ```
 
-# 良かったポイント
+# 今後やりたいこと
 
-## 
+## VectorDBのプロバイダ実装
 
-## 
+Azure Cosmos DB for PostgreSQLでpgvectorを設定するでも良いのですが、Cosmos DB本体がVectorDBとして利用できるのでそちらを利用したいかなぁ。
 
+## Ｓａｎｄｂｏｘ
+
+現在、通常のノード（管理されたVMクラスターの上）でPodを動かしていますが、たくさんの人が使い始めるとSandBoxはリソースを食い潰しそう。[仮想ノード](https://learn.microsoft.com/ja-jp/azure/aks/virtual-nodes)を設定してスパイクした場合に備えておきたい。この設定は恐らくWorker Pod側にも入れておいた方が恐らく幸せになれるのだろうとおもう。
+
+上記とあわせて、スクリプト実行時のファイル保存場所をStorageに切り替えておきたい。大きなデータセットを与えたり、図を書いたりするようになるとリソースは枯渇すると思うし。
 
 [def]: https://github.com/langgenius/dify
