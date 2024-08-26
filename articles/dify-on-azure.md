@@ -115,7 +115,7 @@ rediss://:<ポータルから取得したトークン：Base64です>@＜デプ�
 
 Azure Cosmos DB for PostgreSQLでpgvectorを設定するでも良いのですが、Cosmos DB本体がVectorDBとして利用できるのでそちらを利用したいかなぁ。
 
-## Ｓａｎｄｂｏｘ
+## Sandbox
 
 現在、通常のノード（管理されたVMクラスターの上）でPodを動かしていますが、たくさんの人が使い始めるとSandBoxはリソースを食い潰しそう。[仮想ノード](https://learn.microsoft.com/ja-jp/azure/aks/virtual-nodes)を設定してスパイクした場合に備えておきたい。この設定は恐らくWorker Pod側にも入れておいた方が恐らく幸せになれるのだろうとおもう。
 
